@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pré-conexões para recursos externos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importação de fontes do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Portfólio Eduardo Lacava 4113391</title>
     <style>
         /* Estilos para o corpo da página */
         body {
-            font-family: 'Ubuntu', sans-serif;
+            font-family: 'Ubuntu', sans-serif; 
             color: white;
             background: radial-gradient(circle at 10% 20%, rgb(0, 255, 176) 0%, rgb(66, 105, 242) 90%);
             height: 100vh;
             margin: 0;
-            padding: 0;
+            padding: 0; 
         }
-        
         /* Estilos para a barra de navegação */
         ul.navbar {
             z-index: 20 !important;
@@ -32,11 +33,11 @@
             border-radius: 10px;
             border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
-
+        /* Estilos para os itens da barra de navegação */
         ul.navbar li {
             float: left;
         }
-
+        /* Estilos para os links na barra de navegação */
         ul.navbar li a {
             display: block;
             color: white;
@@ -44,14 +45,17 @@
             padding: 14px 16px;
             text-decoration: none;
         }
-
+        /* Estilos para os links na barra de navegação quando o mouse passa por cima */
         ul.navbar li a:hover {
             background-color: #444;
         }
-        
-        /* Estilos para o cartão de vidro */
+        /* Estilos para o "cartão de vidro" */
         .glass-card {
             padding: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             height: 450px;
             width: 900px;
             background: rgba( 255, 255, 255, 0.25 );
@@ -62,32 +66,15 @@
             border: 1px solid rgba( 255, 255, 255, 0.18 );
             z-index: 20;
         } 
-        
-        /* Estilos para elementos genéricos */
+        /* Estilos para listas não ordenadas (serão usadas para formatar a formação) */
         ul {
             display: flex;
             justify-content: center;
         }
-
+        /* Estilos para o texto em parágrafos */
         span.text {
             font-size: 20px;
         }
-
-        img {
-            height: 300px;
-            border-radius: 50%;
-            border: 10px solid #ffffff80;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        } 
     </style>
 </head>
 <body id="body">
@@ -99,31 +86,16 @@
         <li><a href="contato.html">Contato</a></li>
     </ul>
 
-    <!-- Container para conteúdo principal -->
-    <div class="container">
-        <!-- Imagem do autor -->
-        <img src="https://pps.whatsapp.net/v/t61.24694-24/382539325_300954222691535_59824362353651963_n.jpg?ccb=11-4&oh=01_AdTJy7HC3msnaX3k3N7yYWIaLg_qx1LvG4z0wIwR0TsCcA&oe=654414A9&_nc_sid=000000&_nc_cat=102">
-   
-        <!-- Cartão de vidro com informações de sobre o autor -->
-        <div class="glass-card">
-            <h1>Sobre mim</h1>
-            <span class="text">
-                Sou um desenvolvedor fullstack apaixonado de 19 anos com uma forte ênfase no desenvolvimento backend. Minha jornada no mundo da programação é alimentada pela minha paixão pela criação de soluções tecnológicas inovadoras. 
-            </span> 
-            <span class="text">
-                Tenho habilidades sólidas em uma variedade de tecnologias, incluindo React, Vue.js, Angular, RedwoodJS, Node.js, Spring Boot e Ionic.
-            </span>
-            <span class "text">
-                Meu foco principal está no desenvolvimento de backend, onde posso aplicar minha experiência e conhecimento para criar sistemas robustos e eficientes. 
-            </span> 
-            <span class="text"> 
-                Estou constantemente buscando desafios que me permitam aprimorar minhas habilidades e enfrentar problemas complexos.
-            </span>
-            <span class="text"> 
-                Estou comprometido em me manter atualizado com as últimas tendências tecnológicas e estou ansioso para colaborar em projetos que impulsionem a inovação e o progresso. Minha missão é contribuir para o sucesso dos projetos em que estou envolvido, garantindo que a tecnologia seja uma força positiva e catalisadora.    
-            </span>
-        </div>      
-    </div>
- 
+    <!-- Conteúdo principal em um "cartão de vidro" -->
+    <div class="glass-card">
+        <h1>Formação</h1>
+
+        <ul style="flex-direction: column;">
+            <!-- Itens da formação -->
+            <li>Licenciatura Incompleta em Matemática e Física pela Universidade Federal da ABC</li>
+            <li>Ensino Médio Integrado em Mecatrônica pela Escola Técnica Estadual Júlio de Mesquita</li>
+            <li>Tecnólogo em Andamento no Centro Universitário Uninter</li>
+        </ul>
+    </div>      
 </body>
 </html>

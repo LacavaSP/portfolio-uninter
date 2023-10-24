@@ -52,6 +52,10 @@
         /* Estilos para o cartão de vidro */
         .glass-card {
             padding: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             height: 450px;
             width: 900px;
             background: rgba( 255, 255, 255, 0.25 );
@@ -61,9 +65,8 @@
             border-radius: 10px;
             border: 1px solid rgba( 255, 255, 255, 0.18 );
             z-index: 20;
-        } 
+        }
         
-        /* Estilos para elementos genéricos */
         ul {
             display: flex;
             justify-content: center;
@@ -73,21 +76,17 @@
             font-size: 20px;
         }
 
-        img {
-            height: 300px;
-            border-radius: 50%;
-            border: 10px solid #ffffff80;
+        li {
+            font-size: 20px;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        } 
+        a {
+            cursor: pointer;
+        }
+
+        a:hover {
+            background: blue;
+        }
     </style>
 </head>
 <body id="body">
@@ -99,31 +98,16 @@
         <li><a href="contato.html">Contato</a></li>
     </ul>
 
-    <!-- Container para conteúdo principal -->
-    <div class="container">
-        <!-- Imagem do autor -->
-        <img src="https://pps.whatsapp.net/v/t61.24694-24/382539325_300954222691535_59824362353651963_n.jpg?ccb=11-4&oh=01_AdTJy7HC3msnaX3k3N7yYWIaLg_qx1LvG4z0wIwR0TsCcA&oe=654414A9&_nc_sid=000000&_nc_cat=102">
-   
-        <!-- Cartão de vidro com informações de sobre o autor -->
-        <div class="glass-card">
-            <h1>Sobre mim</h1>
-            <span class="text">
-                Sou um desenvolvedor fullstack apaixonado de 19 anos com uma forte ênfase no desenvolvimento backend. Minha jornada no mundo da programação é alimentada pela minha paixão pela criação de soluções tecnológicas inovadoras. 
-            </span> 
-            <span class="text">
-                Tenho habilidades sólidas em uma variedade de tecnologias, incluindo React, Vue.js, Angular, RedwoodJS, Node.js, Spring Boot e Ionic.
-            </span>
-            <span class "text">
-                Meu foco principal está no desenvolvimento de backend, onde posso aplicar minha experiência e conhecimento para criar sistemas robustos e eficientes. 
-            </span> 
-            <span class="text"> 
-                Estou constantemente buscando desafios que me permitam aprimorar minhas habilidades e enfrentar problemas complexos.
-            </span>
-            <span class="text"> 
-                Estou comprometido em me manter atualizado com as últimas tendências tecnológicas e estou ansioso para colaborar em projetos que impulsionem a inovação e o progresso. Minha missão é contribuir para o sucesso dos projetos em que estou envolvido, garantindo que a tecnologia seja uma força positiva e catalisadora.    
-            </span>
-        </div>      
-    </div>
- 
+    <!-- Cartão de vidro com informações de contato -->
+    <div class="glass-card">
+        <h1>Meu Contato</h1>
+
+        <!-- Lista de links para contato -->
+        <ul style="flex-direction: column;">
+            <li><a href="https://api.whatsapp.com/send?phone=5511966053742&text=Ol%C3%A1,%20vi%20seu%20portfolio!">Clique aqui para WhatsApp</a></li>
+            <li><a href="https://instagram.com/ddlcv23?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr">Clique aqui para Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/eduardo-lacava-82b95a231/">Clique aqui para Linkedin</a></li>
+        </ul>
+    </div> 
 </body>
 </html>

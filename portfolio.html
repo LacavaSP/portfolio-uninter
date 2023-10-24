@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pré-conexões para recursos externos, otimizando o carregamento da página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importação de fontes do Google Fonts para estilização da página -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <title>Portfólio Eduardo Lacava 4113391</title>
+    <style>
+        /* Estilize o corpo da página */
+        body {
+            font-family: 'Ubuntu', sans-serif; /* Define a fonte utilizada */
+            color: white; /* Define a cor do texto como branco */
+            background: radial-gradient(circle at 10% 20%, rgb(0, 255, 176) 0%, rgb(66, 105, 242) 90%); /* Define um plano de fundo com gradiente radial */
+            height: 100vh; /* Define a altura da página como 100% da altura da janela do navegador */
+            margin: 0; /* Remove margens externas */
+            padding: 0; /* Remove preenchimento */
+        }
+        /* Estilize a barra de navegação */
+        ul.navbar {
+            z-index: 20 !important; /* Define a ordem de empilhamento, tornando a barra de navegação sempre visível */
+            list-style-type: none; /* Remove marcadores de lista */
+            margin: 0; /* Remove margens */
+            padding: 0; /* Remove preenchimento */
+            overflow: hidden; /* Evita que o conteúdo derrame para fora da barra de navegação */
+            background: rgba(255, 255, 255, 0.25); /* Define um fundo semi-transparente para a barra de navegação */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adiciona uma sombra ao redor da barra */
+            backdrop-filter: blur(4px); /* Aplica um efeito de desfoque ao fundo da barra */
+            -webkit-backdrop-filter: blur(4px); /* Suporte ao efeito de desfoque para navegadores baseados em Webkit */
+            border-radius: 10px; /* Adiciona cantos arredondados */
+            border: 1px solid rgba(255, 255, 255, 0.18); /* Adiciona uma borda fina à barra de navegação */
+        }
+
+        ul.navbar li {
+            float: left; /* Faz com que os itens da barra de navegação fiquem lado a lado */
+        }
+
+        ul.navbar li a {
+            display: block; /* Torna os links da barra de navegação elementos de bloco */
+            color: white; /* Define a cor do texto dos links como branco */
+            text-align: center; /* Centraliza o texto dentro dos links */
+            padding: 14px 16px; /* Adiciona preenchimento interno para espaçamento */
+            text-decoration: none; /* Remove sublinhado dos links */
+        }
+
+        ul.navbar li a:hover {
+            background-color: #444; /* Altera a cor de fundo dos links quando o mouse passa por cima */
+        }
+
+        /* Estilize o "cartão de vidro" */
+        .glass-card {
+            padding: 10px; /* Adiciona preenchimento interno ao "cartão de vidro" */
+            position: fixed; /* Fixa a posição do elemento na tela */
+            top: 50%; /* Posiciona o "cartão" verticalmente no centro da tela */
+            left: 50%; /* Posiciona o "cartão" horizontalmente no centro da tela */
+            transform: translate(-50%, -50%); /* Centraliza o "cartão" na tela usando transformações */
+            height: 450px; /* Define a altura do "cartão" */
+            width: 900px; /* Define a largura do "cartão" */
+            background: rgba(255, 255, 255, 0.25); /* Define um fundo semi-transparente para o "cartão" */
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Adiciona sombra ao "cartão" */
+            backdrop-filter: blur(4px); /* Aplica um efeito de desfoque ao fundo do "cartão" */
+            -webkit-backdrop-filter: blur(4px); /* Suporte ao efeito de desfoque para navegadores baseados em Webkit */
+            border-radius: 10px; /* Adiciona cantos arredondados ao "cartão" */
+            border: 1px solid rgba(255, 255, 255, 0.18); /* Adiciona uma borda fina ao "cartão" */
+            z-index: 20; /* Define a ordem de empilhamento, tornando o "cartão" visível acima de outros elementos */
+        } 
+
+        ul {
+            display: flex; /* Faz com que as listas não ordenadas se comportem como um flex container */
+            justify-content: center; /* Centraliza os elementos da lista horizontalmente */
+        }
+
+        span.text {
+            font-size: 20px; /* Define o tamanho da fonte para o texto */
+        }
+
+        li {
+            font-size: 20px; /* Define o tamanho da fonte para os itens de lista */
+        }
+    </style>
+</head>
+<body id="body">
+    <!-- Barra de navegação -->
+    <ul class="navbar">
+        <li><a href="index.html">Sobre Mim</a></li>
+        <li><a href="formacao.html">Formação</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+
+    <!-- Conteúdo principal dentro do "cartão de vidro" -->
+    <div class="glass-card">
+        <h1>Projetos Concluídos</h1>
+
+        <ul style="flex-direction: column;">
+            <!-- Lista de projetos concluídos -->
+            <li>Software de Assistente de Receitas</li>
+            <li>Software de Controle de Frotas</li>
+            <li>Software de Dashboard para uma Escola Técnica EAD</li>
+            <li>Software de Gestão de Qualidade</li>
+            <li>Framework Spring Boot para auditoria de registros</li>
+            <li>Simulador de Blindagens de Blindados da Segunda Guerra (Unity)</li>
+            <li>Jogo 3D para ensino de Física para crianças autistas</li>
+            <li>Monitorador de frotas de ambulâncias</li>
+            <li>MicroApp React para autenticação com Amplify e Amazon Cognito</li>
+            <li>Aplicação Desktop para Notificações de Alertas de Segurança</li>
+        </ul>
+    </div>     
+ 
+</body>
+</html>
+ 
+
+
